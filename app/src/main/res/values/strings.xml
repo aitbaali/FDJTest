@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FDJTest</string>
+    <string name="searchview_hint">League name...</string>
+</resources>

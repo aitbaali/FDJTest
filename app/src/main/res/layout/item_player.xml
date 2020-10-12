@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_200"
+        app:cardCornerRadius="@dimen/base_dimen_8"
+        app:cardElevation="@dimen/base_dimen_8"
+        android:layout_margin="@dimen/base_dimen_8">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+                android:id="@+id/img_player"
+                android:scaleType="centerCrop"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:contentDescription="@string/app_name"
+                android:layout_alignParentLeft="true"/>
+
+        <TextView
+                android:textStyle="bold"
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/img_player"
+                android:layout_toEndOf="@id/img_player"
+                android:layout_margin="@dimen/base_dimen_8"/>
+
+        <TextView
+                android:textStyle="italic"
+                android:id="@+id/tv_position"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/img_player"
+                android:layout_toEndOf="@id/img_player"
+                android:layout_below="@id/tv_name"
+                android:layout_margin="@dimen/base_dimen_8"/>
+
+        <TextView
+                android:textStyle="italic"
+                android:id="@+id/tv_bornAt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/img_player"
+                android:layout_toEndOf="@id/img_player"
+                android:layout_alignBottom="@id/img_player"
+                android:layout_margin="@dimen/base_dimen_8"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
